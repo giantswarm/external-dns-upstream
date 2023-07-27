@@ -154,6 +154,7 @@ logLevel: info
 logFormat: text
 
 interval: 1m
+minEventSyncInterval:
 triggerLoopOnEvent: false
 
 namespaceFilter: ""

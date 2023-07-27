@@ -86,6 +86,9 @@ spec:
             {{- if .Values.namespaceFilter }}
             - --namespace={{ .Values.namespaceFilter }}
             {{- end }}
+            {{- if .Values.minEventSyncInterval }}
+            - --min-event-sync-interval={{ .Values.minEventSyncInterval }}
+            {{- end }}
             - --registry={{ .Values.registry }}
             {{- if eq .Values.registry "txt" }}
             {{- if .Values.txtOwnerId }}
