@@ -80,6 +80,9 @@ spec:
             - --source={{ . }}
             {{- end }}
             - --policy={{ .Values.policy }}
+            {{- if .Values.annotationFilter }}
+            - --annotation-filter={{ .Values.annotationFilter }}
+            {{- end }}
             - --registry={{ .Values.registry }}
             {{- if eq .Values.registry "txt" }}
             {{- if .Values.txtOwnerId }}

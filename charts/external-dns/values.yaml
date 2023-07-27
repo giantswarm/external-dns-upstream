@@ -2,6 +2,8 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+annotationFilter: ""
+
 image:
   repository: registry.k8s.io/external-dns/external-dns
   # Overrides the image tag whose default is v{{ .Chart.AppVersion }}
