@@ -185,3 +185,5 @@ secretConfiguration:
 
 deploymentStrategy:
   type: Recreate
+
+hostNetwork: false
