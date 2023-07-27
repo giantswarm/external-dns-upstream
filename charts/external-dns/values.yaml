@@ -156,6 +156,7 @@ logFormat: text
 interval: 1m
 triggerLoopOnEvent: false
 
+namespaceFilter: ""
 namespaced: false
 
 sources:

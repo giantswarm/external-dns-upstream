@@ -83,6 +83,9 @@ spec:
             {{- if .Values.annotationFilter }}
             - --annotation-filter={{ .Values.annotationFilter }}
             {{- end }}
+            {{- if .Values.namespaceFilter }}
+            - --namespace={{ .Values.namespaceFilter }}
+            {{- end }}
             - --registry={{ .Values.registry }}
             {{- if eq .Values.registry "txt" }}
             {{- if .Values.txtOwnerId }}
