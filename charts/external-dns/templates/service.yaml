@@ -5,6 +5,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
   labels:
     {{- include "external-dns.labels" . | nindent 4 }}
+    giantswarm.io/monitoring: "true"
   {{- with .Values.service.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
